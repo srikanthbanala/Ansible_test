@@ -1,0 +1,13 @@
+---
+hosts: 18.222.70.104
+tasks: 
+  - name: creating a folder
+    win_file:
+      path: C:\Temp\
+    state: directory
+    
+  - name: Download file from a file path
+    get_url:
+     url: https://github.com/srikanthbanala/towerTestWeb/tree/master/towerweb.htm
+     dest: C:\Temp\towerweb.htm
+      
