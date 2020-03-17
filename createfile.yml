@@ -6,8 +6,7 @@
       path: C:\Temp\
       state: directory
     
-   - name: Download file from a file path
-     get_url:
-      url: https://github.com/srikanthbanala/towerTestWeb/tree/master/towerweb.htm
-      dest: C:\Temp\towerweb.htm
-      
+   - name: create a file in the folder
+     win_file:
+       path: C:\Temp\new.txt
+       state: touch
