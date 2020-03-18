@@ -1,10 +1,10 @@
 ---
 - name: creating a folder
   win_file:
-      path: C:\Temp\
-      state: directory
+    path: C:\Temp\
+    state: directory
     #just a comment updated
- - name: create a file in the folder
-   win_file:
-       path: C:\Temp\new.txt
-       state: touch
+- name: create a file in the folder
+  win_file:
+     path: C:\Temp\new.txt
+     state: touch
