@@ -1,12 +1,4 @@
 ---
 - hosts: all
   tasks: 
-   - name: creating a folder
-     win_file:
-      path: C:\Temp\
-      state: directory
-    #just a comment updated
-   - name: create a file in the folder
-     win_file:
-       path: C:\Temp\new.txt
-       state: touch
+   - include_roles: copy
