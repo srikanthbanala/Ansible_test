@@ -5,7 +5,7 @@
     state: directory
     #just a comment updated
 - debug:
-    var: vault_var
+    msg: "this is the password found {{ vault_var }}"
     verbosity: 2
 - name: create a file in the folder
   win_file:
