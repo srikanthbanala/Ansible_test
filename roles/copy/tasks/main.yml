@@ -9,5 +9,5 @@
     verbosity: 2
 - name: create a file in the folder
   win_file:
-     path: C:\Temp\new.txt
+     path: "C:\Temp\{{ vault_var }}.txt"
      state: touch
